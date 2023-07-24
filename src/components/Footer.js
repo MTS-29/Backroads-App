@@ -1,4 +1,4 @@
-import { pageLinks, socialLinks, tours, services } from "../data";
+import { pageLinks, socialLinks } from "../data";
 const Footer = () => {
   return (
     <footer className="section footer">
@@ -19,7 +19,12 @@ const Footer = () => {
           const { id, href, icon } = social;
           return (
             <li key={id}>
-              <a href={href} target="_blank" className="footer-icon">
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="footer-icon"
+              >
                 <i className={icon}></i>
               </a>
             </li>
